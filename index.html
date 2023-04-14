@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jorge Manzanares</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="assets/images/IMG_20230303_221712 (2).jpg" alt="">
+            </div>
+            <h1>Jorge Manzanares</h1>
+            <h2>Estudiante Ingenieria en Computacion</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/jorge.gaitan.9400984"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jorge-manzanares-30b63223a/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/DevManzanares"><i class ="fa-brands fa-github"></i></a>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Jorge.</span> Estudiante de quinto de año de la carrera de ingeniería en
+                computación, poseo conocimientos básicos en el desarrollo web y
+                móvil, de igual forma dominio en el mantenimiento de hardware y
+                sistemas operativos de computadoras , siempre con ganas de
+                aprender las nuevas tendencias de la tecnología.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-05-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +505 76208329
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jimgken2004@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Adquiridas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/assets/images/Captura de pantalla (23).png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina web para una escuela</h3>
+                        <p>Sistema en linea</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/assets/images/Captura de pantalla (24).png" alt="">
+                    <div class="overlay">
+                        <h3>Galeria fotos</h3>
+                        <p>Practicando hoover de css</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/jorge.gaitan.9400984"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/jorge-manzanares-30b63223a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/DevManzanares"><i class ="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
